@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="GoogleStyle.css">
+</head>
+<body>  
+    <!-- HEADER STARTS -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="nav__gmail">Gmail</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__image">Images</a>
+                </li>
+                <li>
+                    <div class="navbar__hover-circle">
+                        <a href="#" ><img class="nav__menu-icon" src="/images/dots-menu.png" alt=""></a>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="navbar__hover-circle">
+                        <a href="#" class="nav__user-icon"><span>A</span></a>
+                    </div>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- MAIN-CONTENT STARTS-->
+    <main>
+        <section class="content-section">
+            <div class="content-wrapper">
+                <img src="/images/hero google img.png" alt="Google Img" class="hero-img">
+                <div class="search-box">
+                    <img class="search-icon" src="/images/search.png" alt="">
+
+                    <input id="search-bar" class="search-bar" onkeydown="searchOnEnter(event)" type="text">
+
+                    <img class="mic-icon" src="/images/Google mic icon.png" alt="">
+
+                    <img src="/images/Google camera icon.png" alt="" class="camera-icon">
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="search-btns">
+                    <button class="google-search-btn" onclick="performGoogleSearch()">Google Search</button>
+                    <button class="lucky-btn">I'm Feeling Lucky</button>
+                </div>
+
+                <div class="various-lang">
+                    <p>Google Offered in:   <a href="#">हिन्दी</a>
+                                            <a href="#">বাংলা</a>
+                                            <a href="#">తెలుగు</a>
+                                            <a href="">తెలుగు</a>
+                                            <a href="#">मराठी</a>
+                                            <a href="#">ગુજરાતી</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="footer upper-footer">
+            <p>India</p>
+        </div>
+        <div class="footer lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Advertising</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">Now Search Works</a>
+                </li>
+            </ul>
+
+            <ul class="lower-right-footer">
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- JS FILE -->
+    <script src="Google.js"></script>
+</body>
+</html>
