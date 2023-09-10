@@ -1,0 +1,297 @@
+/* Normalize Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* =================================== Header Css ========================================= */
+header{
+    height: 60px;
+}
+
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* Menu Icon */
+.nav__menu-icon{
+    margin-top: 3px;
+    width: 17px;
+    height: 17px;
+    opacity: 0.6;
+}
+
+.navbar ul li{
+    margin-left: 10px;
+}
+
+.navbar ul li a{
+    color: rgba(0,0,0,.87);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.nav__user-icon span{
+    font-size: 18px;
+    color: white;
+}
+
+/* User Icon */
+.nav__user-icon{
+    background-color: rgb(207, 69, 69);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Circular Hover Affect */
+.navbar__hover-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__hover-circle:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+
+
+/* ================================= Main-Content Css ==================================== */
+
+.content-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-wrapper{
+    padding: 95px 0px 143px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Google Img */
+.hero-img{
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+/* Search Icon Img */
+.search-icon{
+    width: 13px;
+    height: 13px;
+    opacity: 0.4;
+}
+
+/* Mic Icon Img */
+.mic-icon{
+    width: 13px;
+    height: 18px;
+    
+}
+
+
+/* Camera Icon Img */
+.camera-icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Search Box */
+.search-box{
+    width: 35rem;
+    height: 45px;
+    display: flex;
+    border:  1px solid lightgray;
+    border-radius: 30px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.search-box:hover{
+    box-shadow: 0px 0px 4px 0px #b5b5b5;
+}
+
+
+.search-box img{
+    font-size: 18px;
+    color: gray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Search Field */
+.search-bar{
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+/* Buttons */
+.search-btns{
+    margin-top: 20px;
+}
+
+
+.search-btns button{
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: rgba(0,0,0,.87);
+    background-color: #f2f3f4;
+}
+
+
+.search-btns button:hover{
+    border: 1px solid lightgray;
+}
+
+.google-search-btn{
+    width: 120px;
+}
+
+.lucky-btn{
+    width: 140px;
+}
+
+
+/* Google Various Lang  */
+.various-lang{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.various-lang a{
+    color: rgb(3, 3, 181);
+    margin-left: 5px;
+}
+
+
+/* ====================================== FOOTER CSS ========================================= */
+
+footer{
+    margin-top: auto;
+    background-color: #f2f2f2;
+    height: 90px;
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.upper-footer{
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+
+footer p{
+    color: grey;
+    font-size: 14px;
+}
+
+.lower-footer{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-footer ul li a{
+    font-size: 14px;
+    color: gray;
+}
+
+.lower-left-footer, .lower-right-footer{
+    display: flex;
+}
+
+.lower-left-footer li, .lower-right-footer li{
+    margin-right: 15px;
+}
+
+
+/* ====================================== Responsive Css ====================================================== */
+@media only screen and (max-width: 650px){
+
+    .content-wrapper{
+        padding: 35px 0px 50px 0px;
+    }
+    /* Search Box */
+    .search-box{
+        width: 25rem;
+    }
+
+    /* Footer */
+    footer{
+        height: 140px;
+    }
+
+    .upper-footer{
+        height: 2rem;
+    }
+
+    .lower-footer{
+        height: 6rem;
+        flex-direction: column;
+    }
+}
